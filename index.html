@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>BIC Inspector</title>
+    <script type="text/javascript" src="js/bicinspector.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+</head>
+
+<body>
+
+<h1>BIC Inspector</h1>
+
+    <section id="form">
+    <!-- The input section-->
+        <label>Please enter a bankcode:</label>
+        <input id="bankcode" required>
+        <button id="submit" onclick="requestBICDetails();">Show BIC details</button>
+        <br>
+        <br>
+        <br>
+    </section>
+
+<section id="result" hidden>
+    <!-- The result section -->
+    <h2>Bankcode Details</h2>
+    <p>
+        <label style="font-weight:bold;margin-right:20px">BIC:</label><span id="bic"></span>
+    </p>
+    <p>
+        <label style="font-weight:bold;margin-right:20px">Bank Name:</label><span id="bank_name"></span>
+    </p>
+    <p>
+        <label style="font-weight:bold;margin-right:20px">Postal Code:</label><span id="postal_code"></span>
+    </p>
+    <p>
+        <label style="font-weight:bold;margin-right:20px">City:</label><span id="city"></span>
+    </p>
+
+
+
+</section>
+
+</body>
+
+</html>
